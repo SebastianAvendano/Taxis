@@ -18,6 +18,7 @@ migrate_working_dir/
 *.iml
 *.ipr
 *.iws
+*.jks
 .idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
@@ -40,6 +41,7 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
 *.jks
 
 # Android Studio will place build artifacts here
