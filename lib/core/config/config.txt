@@ -1,0 +1,2 @@
+Colección de Clases que contengan métodos que sirvan para configurar ejecuciones de la App.
+Ejemplo: Ambientes, Versiones Internas, idioma etc.

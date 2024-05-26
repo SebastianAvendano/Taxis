@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824837657570",
+    "project_id": "task-16afd",
+    "storage_bucket": "task-16afd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824837657570:android:20ab34cc69ababf9471fbb",
+        "android_client_info": {
+          "package_name": "com.sebastianavendano.task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkC6_LzBG_E1UlcSVe_MwFyK1Hk92YHA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

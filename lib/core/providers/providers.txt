@@ -1,0 +1,2 @@
+Colecciones de clases que instancien o no una librería, con el objetivo de conectar recursos externos de la App.
+Ejemplo: peticiones http, leer json externos, instanciar blocs etc.

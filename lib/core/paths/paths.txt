@@ -1,0 +1,1 @@
+Enpoints de servicios, rutas de la App, rutas de archivos estáticos etc.
