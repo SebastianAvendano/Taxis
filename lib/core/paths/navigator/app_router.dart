@@ -1,10 +1,14 @@
+import 'package:AeroTaxi/ui/views/faqs_view/faqs_view.dart';
+import 'package:AeroTaxi/ui/views/home_view/home_view.dart';
+import 'package:AeroTaxi/ui/views/legal_document_view/legal_document_view.dart';
+import 'package:AeroTaxi/ui/views/services_view/services_view.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:task/core/paths/navigator/route_guards/main_guard.dart';
-import 'package:task/ui/views/create_task_view/create_task_view.dart';
-import 'package:task/ui/views/login_view/login_view.dart';
-import 'package:task/ui/views/main_view/main_view.dart';
-import 'package:task/ui/views/profile_view/profile_view.dart';
-import 'package:task/ui/views/tasks_view/task_view.dart';
+import 'package:AeroTaxi/core/paths/navigator/route_guards/main_guard.dart';
+import 'package:AeroTaxi/ui/views/create_task_view/create_task_view.dart';
+import 'package:AeroTaxi/ui/views/login_view/login_view.dart';
+import 'package:AeroTaxi/ui/views/main_view/main_view.dart';
+import 'package:AeroTaxi/ui/views/profile_view/profile_view.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_view.dart';
 
 import 'route_guards/auth_guard.dart';
 

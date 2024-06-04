@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/data/models/bottombar_model.dart';
-import 'package:task/ui/widgets/bottom_bar/animated_bottombar_icon.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/data/models/bottombar_model.dart';
+import 'package:AeroTaxi/ui/widgets/bottom_bar/animated_bottombar_icon.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({
@@ -28,7 +28,7 @@ class BottomNavigation extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       backgroundColor: Colors.white,
       selectedItemColor: ColorsAppTheme.primaryColor,
-      unselectedItemColor: ColorsAppTheme.secondColor,
+      unselectedItemColor: ColorsAppTheme.blueColor,
       onTap: onPressed,
     );
   }
@@ -44,7 +44,7 @@ class BottomNavigation extends StatelessWidget {
 
   Widget _buildRegularIcon(int index) {
     return AnimatedBottomBarIcon(
-      urlAsset: pages[index].icon,
+      iconData: pages[index].icon,
       isActive: currentPage == index,
     );
   }

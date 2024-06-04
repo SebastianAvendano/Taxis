@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
 
 class SectionNameView extends StatelessWidget {
   const SectionNameView(
@@ -31,7 +31,7 @@ class SectionNameView extends StatelessWidget {
                 const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
-                  color: ColorsAppTheme.secondColor,
+                  color: ColorsAppTheme.primaryColor,
                 ),
           ),
         ),

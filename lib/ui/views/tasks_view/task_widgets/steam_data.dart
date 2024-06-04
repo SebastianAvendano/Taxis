@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get_it/get_it.dart';
 import 'package:jiffy/jiffy.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/data/models/task/task_model.dart';
-import 'package:task/ui/views/tasks_view/task_controller.dart';
-import 'package:task/ui/widgets/card.dart';
-import 'package:task/ui/widgets/empty_data_lottie_widget.dart';
-import 'package:task/ui/widgets/loading_widget.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/data/models/task_model/task_model.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_controller.dart';
+import 'package:AeroTaxi/ui/widgets/card.dart';
+import 'package:AeroTaxi/ui/widgets/empty_data_lottie_widget.dart';
+import 'package:AeroTaxi/ui/widgets/loading_widget.dart';
 
 final injector = GetIt.instance;
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:task/ui/views/create_task_view/create_task_controller.dart';
-import 'package:task/ui/widgets/activity_indicator%20copy.dart';
-import 'package:task/ui/widgets/button.dart';
-import 'package:task/ui/widgets/text_form_input.dart';
+import 'package:AeroTaxi/ui/views/create_task_view/create_task_controller.dart';
+import 'package:AeroTaxi/ui/widgets/activity_indicator%20copy.dart';
+import 'package:AeroTaxi/ui/widgets/button.dart';
+import 'package:AeroTaxi/ui/widgets/text_form_input.dart';
 
 final injector = GetIt.instance;
 

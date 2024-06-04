@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:task/data/models/models_converter/date_time_converter.dart';
+import 'package:AeroTaxi/data/models/models_converter/date_time_converter.dart';
 
 part 'user_model.g.dart';
 
@@ -16,6 +16,7 @@ class UserModel {
     this.email = '',
     this.fcmToken = '',
     this.cellPhone = '',
+    this.rol = 'CLIENT',
     this.isActive = false,
   });
 
@@ -26,6 +27,7 @@ class UserModel {
   final String? photo;
   final String? fcmToken;
   final String? cellPhone;
+  final String? rol;
 
   @DateTimeConverter()
   final DateTime? createdAt;
@@ -39,6 +41,7 @@ class UserModel {
     String? fcmToken,
     String? cellPhone,
     DateTime? createdAt,
+    String? rol,
   }) =>
       UserModel(
         displayName: displayName ?? this.displayName,
@@ -49,6 +52,7 @@ class UserModel {
         cellPhone: cellPhone ?? this.cellPhone,
         createdAt: createdAt ?? this.createdAt,
         id: id ?? this.id,
+        rol: rol ?? this.rol,
       );
 
   factory UserModel.fromRawJson(String str) =>

@@ -1,8 +1,8 @@
 import 'package:logger/logger.dart';
 import 'package:injectable/injectable.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:task/core/repositories/task_repository/task_repository_interface.dart';
-import 'package:task/data/share/preferences_share.dart';
+import 'package:AeroTaxi/core/repositories/task_repository/task_repository_interface.dart';
+import 'package:AeroTaxi/data/share/preferences_share.dart';
 
 @injectable
 class TaskImpl implements TaskInterface {

@@ -1,4 +1,4 @@
-name: task
+name: AeroTaxi
 description: "Proyecto para gestionar tareas"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,7 +35,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
-  rive: ^0.13.5
   auto_route: ^8.1.3
   firebase_core: ^2.31.1
   jiffy: ^5.0.0
@@ -58,6 +57,10 @@ dependencies:
   url_launcher: 6.1.12
   package_info_plus: 4.1.0
   provider: ^6.1.2
+  permission_handler: ^11.3.1
+  google_maps_flutter: ^2.2.8
+  intl: ^0.17.0
+
 
 dev_dependencies:
   flutter_test:

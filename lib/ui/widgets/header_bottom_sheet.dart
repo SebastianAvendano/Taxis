@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:task/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
 
 class HeaderBottomSheet extends StatelessWidget {
   const HeaderBottomSheet({
@@ -37,7 +37,7 @@ class HeaderBottomSheet extends StatelessWidget {
         ),
         trailing: IconButton(
           onPressed: () => context.router.pop(),
-          color: ColorsAppTheme.secondColor,
+          color: ColorsAppTheme.primaryColor,
           icon: const Icon(Icons.close),
         ),
       ),
@@ -49,7 +49,7 @@ class HeaderBottomSheet extends StatelessWidget {
         width: 60,
         margin: const EdgeInsets.only(bottom: 15),
         decoration: BoxDecoration(
-          color: ColorsAppTheme.secondColor.withOpacity(0.2),
+          color: ColorsAppTheme.primaryColor.withOpacity(0.2),
           borderRadius: BorderRadius.circular(10),
         ),
       );

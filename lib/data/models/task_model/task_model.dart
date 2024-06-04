@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:task/data/models/models_converter/date_time_converter.dart';
+import 'package:AeroTaxi/data/models/models_converter/date_time_converter.dart';
 
 part 'task_model.g.dart';
 

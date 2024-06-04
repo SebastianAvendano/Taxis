@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "task",
+            "name": "AeroTaxi",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "task (profile mode)",
+            "name": "AeroTaxi (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "task (release mode)",
+            "name": "AeroTaxi (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/ui/views/tasks_view/task_controller.dart';
-import 'package:task/ui/views/tasks_view/task_store.dart';
-import 'package:task/ui/widgets/sliver_app_bar_widget/sliver_app_bar_delegate.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_controller.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_store.dart';
+import 'package:AeroTaxi/ui/widgets/sliver_app_bar_widget/sliver_app_bar_delegate.dart';
 
 final injector = GetIt.instance;
 
@@ -33,7 +33,7 @@ class TabsStatusWidget extends StatelessWidget {
               isScrollable: true,
               dividerColor: Colors.white,
               labelColor: Colors.white,
-              unselectedLabelColor: ColorsAppTheme.secondColor,
+              unselectedLabelColor: ColorsAppTheme.blueColor,
               labelStyle: _textStyleLabel,
               splashBorderRadius: BorderRadius.circular(50),
               unselectedLabelStyle: _textStyleLabel.copyWith(

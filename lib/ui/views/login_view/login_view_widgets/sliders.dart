@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/paths/local_paths.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/data/models/slider_onboarding_model.dart';
-import 'package:task/ui/views/login_view/login_view_widgets/background.dart';
-import 'package:task/ui/widgets/pagination_carousel.dart';
+import 'package:AeroTaxi/core/paths/local_paths.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/data/models/slider_onboarding_model.dart';
+import 'package:AeroTaxi/ui/views/login_view/login_view_widgets/background.dart';
+import 'package:AeroTaxi/ui/widgets/pagination_carousel.dart';
 
 class Sliders extends StatefulWidget {
   const Sliders({super.key});
@@ -42,9 +42,15 @@ class _SlidersState extends State<Sliders> {
   Widget build(BuildContext context) {
     List<SliderOnboarding> sliders = [
       SliderOnboarding(
-        topImage: LocalAppPaths.sliders,
-        bold: "TaskMaster",
-        label: "Organiza y gestiona tus tareas diarias.",
+        topImage: LocalAppPaths.slider_2,
+        bold: "Viajes Confiables",
+        label: "Viajes seguros y confiables con nuestra app de taxis.",
+      ),
+      SliderOnboarding(
+        topImage: LocalAppPaths.slider_1,
+        bold: "Tu Socio de Viaje",
+        label:
+            "Organiza tus traslados con facilidad y llega a tiempo con nuestra app de taxis.",
       ),
     ];
 
@@ -76,7 +82,7 @@ class _SlidersState extends State<Sliders> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              LocalAppPaths.sliders,
+              item.topImage,
             ),
             _buildTitle(item.bold, item.label),
           ],
@@ -88,12 +94,13 @@ class _SlidersState extends State<Sliders> {
   Widget _buildTitle(String bold, String label) {
     return Column(
       children: [
+        const SizedBox(height: 10),
         Text(
           bold,
           textAlign: TextAlign.center,
           style: const TextStyle(
             fontSize: 24,
-            color: ColorsAppTheme.blueColor,
+            color: ColorsAppTheme.secondColor,
             fontWeight: FontWeight.w700,
           ),
         ),

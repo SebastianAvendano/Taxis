@@ -7,6 +7,11 @@ List<AutoRoute> mainRoutes = [
     guards: [MainGuard()],
     children: [
       AutoRoute(
+        path: 'home',
+        maintainState: false,
+        page: HomeRoute.page,
+      ),
+      AutoRoute(
         path: 'profile',
         maintainState: false,
         page: ProfileRoute.page,
@@ -16,11 +21,26 @@ List<AutoRoute> mainRoutes = [
         maintainState: false,
         page: TasksRoute.page,
       ),
+      AutoRoute(
+        path: 'services',
+        maintainState: false,
+        page: ServicesRoute.page,
+      ),
     ],
   ),
   AutoRoute(
-    path: '/createTask/',
+    path: '/createTask',
     page: CreateTaskRoute.page,
+    guards: [MainGuard()],
+  ),
+  AutoRoute(
+    path: '/legaldocuments',
+    page: LegalDocumentRoute.page,
+    guards: [MainGuard()],
+  ),
+  AutoRoute(
+    path: '/faqs',
+    page: FaqsRoute.page,
     guards: [MainGuard()],
   ),
 ];

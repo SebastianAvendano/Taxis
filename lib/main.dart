@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
-import 'package:task/core/config/init_app_config.dart';
-import 'package:task/core/paths/navigator/app_router.dart';
-import 'package:task/core/providers/providers.dart';
-import 'package:task/core/theme/app_theme.dart';
+import 'package:AeroTaxi/core/config/init_app_config.dart';
+import 'package:AeroTaxi/core/paths/navigator/app_router.dart';
+import 'package:AeroTaxi/core/providers/providers.dart';
+import 'package:AeroTaxi/core/theme/app_theme.dart';
 
 final injector = GetIt.instance;
 

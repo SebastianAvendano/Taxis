@@ -36,6 +36,23 @@ class AuthImpl implements AuthInterface {
   }
 
   @override
+  Future<bool> validateCredentials(String id) async {
+    try {
+      DocumentSnapshot docSnapshot =
+          await _firestore.collection(_keyCollection).doc(id).get();
+
+      if (docSnapshot.exists) {
+        return true;
+      } else {
+        return false;
+      }
+    } on FirebaseException catch (e) {
+      _logger.e(e.message);
+      return false;
+    }
+  }
+
+  @override
   Future<UserCredential?> signInWithGoogle() async {
     try {
       await signOut();
@@ -62,5 +79,16 @@ class AuthImpl implements AuthInterface {
   @override
   User? getCurrentUser() {
     return _auth.currentUser;
+  }
+
+  @override
+  Future<DocumentSnapshot<Map<String, dynamic>>>? getUseryId(
+      {required String id}) {
+    try {
+      return _firestore.collection(_keyCollection).doc(id).get();
+    } on FirebaseException catch (e) {
+      _logger.e(e.message);
+      return null;
+    }
   }
 }

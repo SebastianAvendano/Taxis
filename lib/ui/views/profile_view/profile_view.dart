@@ -1,12 +1,12 @@
 import 'package:get_it/get_it.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:task/ui/views/profile_view/profile_controller.dart';
-import 'package:task/ui/views/profile_view/profile_view_widgets/profile_view_avatar.dart';
-import 'package:task/ui/views/profile_view/profile_view_widgets/sections_buttons.dart';
-import 'package:task/ui/widgets/render_current_version.dart';
-import 'package:task/ui/widgets/sliver_app_bar_widget/section_name_view_widget.dart';
-import 'package:task/ui/widgets/sliver_app_bar_widget/sliver_app_bar_widget.dart';
+import 'package:AeroTaxi/ui/views/profile_view/profile_controller.dart';
+import 'package:AeroTaxi/ui/views/profile_view/profile_view_widgets/profile_view_avatar.dart';
+import 'package:AeroTaxi/ui/views/profile_view/profile_view_widgets/sections_buttons.dart';
+import 'package:AeroTaxi/ui/widgets/render_current_version.dart';
+import 'package:AeroTaxi/ui/widgets/sliver_app_bar_widget/section_name_view_widget.dart';
+import 'package:AeroTaxi/ui/widgets/sliver_app_bar_widget/sliver_app_bar_widget.dart';
 
 final injector = GetIt.instance;
 

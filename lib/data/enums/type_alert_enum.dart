@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/data/models/type_alert_model.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/data/models/type_alert_model.dart';
 
 enum TypeAlertEnum {
   success(TypeAlertGenericModel(

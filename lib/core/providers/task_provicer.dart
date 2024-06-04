@@ -1,4 +1,4 @@
-import 'package:task/data/models/task/task_model.dart';
+import 'package:AeroTaxi/data/models/task_model/task_model.dart';
 
 import 'disposable_provider.dart';
 

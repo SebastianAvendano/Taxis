@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
 
 class BottomBarModel {
   const BottomBarModel({
@@ -8,6 +9,6 @@ class BottomBarModel {
   });
 
   final String label;
-  final String icon;
+  final IconData icon;
   final PageRouteInfo<dynamic>? redirect;
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
 
 class PaginationCarousel extends StatelessWidget {
   const PaginationCarousel({
@@ -62,9 +62,9 @@ class PaginationCarousel extends StatelessWidget {
 
   Color? _colorIndicator(int index) {
     Color? colorSelectIndicatorValue =
-        colorSelectIndicator ?? ColorsAppTheme.blueColor;
+        colorSelectIndicator ?? ColorsAppTheme.primaryColor;
     Color? colorUnSelectIndicatorValue =
-        colorUnSelectIndicator ?? ColorsAppTheme.primaryColor;
+        colorUnSelectIndicator ?? ColorsAppTheme.secondColor;
     if (currentPage == index) {
       return colorSelectIndicatorValue;
     }

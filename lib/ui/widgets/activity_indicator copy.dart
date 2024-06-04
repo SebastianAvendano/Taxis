@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
 
 const sizeIndicator = 30.0;
 

@@ -13,7 +13,7 @@ class LaunchUrlComponent {
 
   static void launchToWhatsApp({required String cellPhone}) async {
     final Uri uri = Uri.parse(
-        "https://api.whatsapp.com/send?phone=$cellPhone&text=${Uri.parse("Hola Sebastian, nos interesa tu aplicación")}");
+        "https://api.whatsapp.com/send?phone=$cellPhone&text=${Uri.parse("Hola, necesito ayuda")}");
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
       throw 'Could not launch $uri';
     }

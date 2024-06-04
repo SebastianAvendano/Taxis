@@ -1,4 +1,4 @@
-package com.sebastianavendano.task
+package com.driveup.app
 
 import io.flutter.embedding.android.FlutterActivity
 

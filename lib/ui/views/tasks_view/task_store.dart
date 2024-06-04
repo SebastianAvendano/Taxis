@@ -1,4 +1,4 @@
-import 'package:task/data/models/task/task_status_model.dart';
+import 'package:AeroTaxi/data/models/task_model/task_status_model.dart';
 
 class TaskStore {
   static const List<TaskStatusModel> tabsStatus = [
@@ -8,7 +8,7 @@ class TaskStore {
     ),
     TaskStatusModel(
       value: "DONE",
-      name: "Finalizadas",
+      name: "Finalizados",
     ),
   ];
 }

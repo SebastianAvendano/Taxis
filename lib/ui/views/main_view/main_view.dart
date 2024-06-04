@@ -1,8 +1,8 @@
 import 'package:get_it/get_it.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:task/ui/views/main_view/main_view_store.dart';
-import 'package:task/ui/widgets/bottom_bar/bottombar.dart';
+import 'package:AeroTaxi/ui/views/main_view/main_view_store.dart';
+import 'package:AeroTaxi/ui/widgets/bottom_bar/bottombar.dart';
 
 import 'main_controller.dart';
 

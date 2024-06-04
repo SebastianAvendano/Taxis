@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:task/core/providers/user_provider.dart';
-import 'package:task/core/theme/colors_theme.dart';
-import 'package:task/data/models/profile/user_model.dart';
+import 'package:AeroTaxi/core/providers/user_provider.dart';
+import 'package:AeroTaxi/core/theme/colors_theme.dart';
+import 'package:AeroTaxi/data/models/profile_model/user_model.dart';
 
 class AvatarProfileView extends StatelessWidget {
   const AvatarProfileView({
@@ -16,7 +16,6 @@ class AvatarProfileView extends StatelessWidget {
         final UserModel currentUser = userProvider.user;
 
         return Container(
-          color: ColorsAppTheme.primaryColor.withOpacity(0.2),
           padding: const EdgeInsets.symmetric(
             horizontal: 25.0,
             vertical: 15,
@@ -31,7 +30,7 @@ class AvatarProfileView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: 30,
-        vertical: 36,
+        vertical: 20,
       ),
       child: _buildInformation(user.displayName!),
     );
@@ -39,10 +38,12 @@ class AvatarProfileView extends StatelessWidget {
 
   Widget _buildInformation(String text) => Text(
         text,
-        maxLines: 1,
+        maxLines: 2,
+        textAlign: TextAlign.center,
         style: const TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.w400,
+          fontSize: 18,
+          fontWeight: FontWeight.w800,
+          color: ColorsAppTheme.blueColor,
         ),
       );
 }

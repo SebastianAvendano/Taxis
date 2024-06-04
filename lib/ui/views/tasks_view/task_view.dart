@@ -1,14 +1,14 @@
+import 'package:AeroTaxi/ui/views/tasks_view/task_widgets/steam_data.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:task/ui/views/tasks_view/task_controller.dart';
-import 'package:task/ui/views/tasks_view/task_store.dart';
-import 'package:task/ui/views/tasks_view/task_widgets/button_add_task.dart';
-import 'package:task/ui/views/tasks_view/task_widgets/steam_data.dart';
-import 'package:task/ui/views/tasks_view/task_widgets/tabs_status_widget.dart';
-import 'package:task/ui/widgets/sliver_app_bar_widget/section_name_view_widget.dart';
-import 'package:task/ui/widgets/sliver_app_bar_widget/sliver_app_bar_widget.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_controller.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_store.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_widgets/button_add_task.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_widgets/tabs_status_widget.dart';
+import 'package:AeroTaxi/ui/widgets/sliver_app_bar_widget/section_name_view_widget.dart';
+import 'package:AeroTaxi/ui/widgets/sliver_app_bar_widget/sliver_app_bar_widget.dart';
 
 final injector = GetIt.instance;
 
@@ -34,7 +34,6 @@ class _TasksViewState extends State<TasksView>
 
   @override
   void didChangeDependencies() {
-    _taskController.initView(context: context);
     super.didChangeDependencies();
   }
 
@@ -93,11 +92,11 @@ class _TasksViewState extends State<TasksView>
                 slivers: [
                   CustomSliverAppBar(
                     controller: _controller,
-                    title: "Mis tareas",
+                    title: "Reportes",
                   ),
                   const SliverToBoxAdapter(
                     child: SectionNameView(
-                      title: "Mis tareas",
+                      title: "Reportes",
                     ),
                   ),
                   const TabsStatusWidget(),

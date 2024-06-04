@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
-import 'package:task/core/components/launch_url_component.dart';
-import 'package:task/core/paths/navigator/app_router.dart';
-import 'package:task/core/providers/providers.dart';
-import 'package:task/core/providers/user_provider.dart';
-import 'package:task/core/repositories/auth_repository/auth_repository_impl.dart';
-import 'package:task/data/models/profile/user_model.dart';
-import 'package:task/data/share/preferences_share.dart';
+import 'package:AeroTaxi/core/components/launch_url_component.dart';
+import 'package:AeroTaxi/core/paths/navigator/app_router.dart';
+import 'package:AeroTaxi/core/providers/providers.dart';
+import 'package:AeroTaxi/core/providers/user_provider.dart';
+import 'package:AeroTaxi/core/repositories/auth_repository/auth_repository_impl.dart';
+import 'package:AeroTaxi/data/models/profile_model/user_model.dart';
+import 'package:AeroTaxi/data/share/preferences_share.dart';
 
 @singleton
 class ProfileController {
@@ -20,12 +20,15 @@ class ProfileController {
 
   Future<void> initView({required BuildContext context}) async {
     final userData = _authImpl.getCurrentUser()!;
+    final queryUser = await _authImpl.getUseryId(id: userData.uid);
+    final user = queryUser!.data()!;
     setUser(
       user: UserModel.fromJson({
         'id': userData.uid,
         'email': userData.email,
         'displayName': userData.displayName,
         'photoURL': userData.photoURL,
+        'rol': user['rol']
       }),
       context: context,
     );
@@ -45,6 +48,9 @@ class ProfileController {
   void launchSupport() async {
     LaunchUrlComponent.launchToWhatsApp(cellPhone: "+573209149704");
   }
+
+  void handleRedirectSurvey() =>
+      LaunchUrlComponent.launchURL("https://forms.gle/RgRCtdyBUMhXV7g49");
 
   void dispose() {}
 }

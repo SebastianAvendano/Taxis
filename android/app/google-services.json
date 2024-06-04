@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "824837657570",
-    "project_id": "task-16afd",
-    "storage_bucket": "task-16afd.appspot.com"
+    "project_number": "777554069848",
+    "project_id": "driveup-b2694",
+    "storage_bucket": "driveup-b2694.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:824837657570:android:20ab34cc69ababf9471fbb",
+        "mobilesdk_app_id": "1:777554069848:android:a54b4dc2b7b45e1be13d2d",
         "android_client_info": {
-          "package_name": "com.sebastianavendano.task"
+          "package_name": "com.driveup.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "777554069848-37i3dinoe8pukua28ku9o3cvus0ta3l2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.driveup.app",
+            "certificate_hash": "2cb905a4f5353fb9cb3f166201098c52dca7b356"
+          }
+        },
+        {
+          "client_id": "777554069848-3haa20i8fp136am54i9cte39ra8c90b4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyAkC6_LzBG_E1UlcSVe_MwFyK1Hk92YHA0"
+          "current_key": "AIzaSyDuMWQ45hYoZshsTtaFc6nmQnEi5JOuTf4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777554069848-3haa20i8fp136am54i9cte39ra8c90b4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

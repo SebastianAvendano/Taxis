@@ -5,12 +5,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
-import 'package:task/core/paths/navigator/app_router.dart';
-import 'package:task/core/providers/task_provicer.dart';
-import 'package:task/core/repositories/task_repository/task_repository_impl.dart';
-import 'package:task/data/models/task/task_model.dart';
-import 'package:task/ui/views/task_buttom_sheet/task_buttom_sheet.dart';
-import 'package:task/ui/views/tasks_view/task_store.dart';
+import 'package:AeroTaxi/core/paths/navigator/app_router.dart';
+import 'package:AeroTaxi/core/providers/task_provicer.dart';
+import 'package:AeroTaxi/core/repositories/task_repository/task_repository_impl.dart';
+import 'package:AeroTaxi/data/models/task_model/task_model.dart';
+import 'package:AeroTaxi/ui/views/task_buttom_sheet/task_buttom_sheet.dart';
+import 'package:AeroTaxi/ui/views/tasks_view/task_store.dart';
 
 @singleton
 class TaskController {

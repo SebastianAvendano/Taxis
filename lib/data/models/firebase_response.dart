@@ -1,4 +1,4 @@
-import 'package:task/core/components/FirebaseAuth/auth_status_enum.dart';
+import 'package:AeroTaxi/core/components/FirebaseAuth/auth_status_enum.dart';
 
 class FirebaseResponse {
   final AuthResultStatus status;

@@ -2,10 +2,10 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:get_it/get_it.dart';
-import 'package:task/ui/views/login_view/login_controller.dart';
-import 'package:task/ui/views/login_view/login_view_widgets/sliders.dart';
-import 'package:task/ui/widgets/activity_indicator%20copy.dart';
-import 'package:task/ui/widgets/button.dart';
+import 'package:AeroTaxi/ui/views/login_view/login_controller.dart';
+import 'package:AeroTaxi/ui/views/login_view/login_view_widgets/sliders.dart';
+import 'package:AeroTaxi/ui/widgets/activity_indicator%20copy.dart';
+import 'package:AeroTaxi/ui/widgets/button.dart';
 
 final injector = GetIt.instance;
 
@@ -46,8 +46,8 @@ class _LoginViewState extends State<LoginView> {
     );
   }
 
-  Padding _buildButton(BuildContext context) {
-    return Padding(
+  Widget _buildButton(BuildContext context) {
+    return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: 25,
         vertical: 70,
